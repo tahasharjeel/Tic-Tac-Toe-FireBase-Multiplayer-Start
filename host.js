@@ -57,7 +57,7 @@ function play() {
     firebase.database().ref("name2" + codeInput).set({
       player2: name2
     });
-    window.location = 'start.html';
+    window.location = 'https://tahasharjeel.github.io/Tic-Tac-Toe-FireBase-Multiplayer-Main/';
   } else {
     alert("Game not found!");
   }
