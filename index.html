@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="stylesHostJoin.css">
+</head>
+
+<body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyB_rwC7fQb3ypy2vHD4jXSGrJtlIb4Aqus",
+      authDomain: "tictactoe-multiplayer-fd572.firebaseapp.com",
+      databaseURL: "https://tictactoe-multiplayer-fd572.firebaseio.com",
+      projectId: "tictactoe-multiplayer-fd572",
+      storageBucket: "tictactoe-multiplayer-fd572.appspot.com",
+      messagingSenderId: "636768722144",
+      appId: "1:636768722144:web:ea7bdc3b134fc4b88f0485"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <div id="hostJoin" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      Name:<input id="name" type="text" value="">
+      <p id="code"></p>
+      <label id="codeLabel">Enter Code:</label><input id="codeInput" type="text" value="">
+      <button id="host" onclick="host()" class="hostButton">HOST</button>
+      <button id="join" onclick="join()" class="joinButton">JOIN</button>
+      <button id="playHost" onclick="window.location.href='start.html';" class="playButtonHost">PLAY</button>
+      <button id="playJoin" onclick="play()" class="playButtonJoin">PLAY</button>
+    </div>
+  </div>
+  <script src="Tic Tac Toe Multiplayer\host.js"></script>
+
+</body>
+
+</html>
